@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    background: hsl(0, 0%, 15%);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    max-width: 800px;
+    padding-top: 180px;
+    color: white;
+}
