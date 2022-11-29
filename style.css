@@ -1,20 +1,39 @@
 html, body {
     margin: 0;
+    height: 90vh;
     background: hsl(0, 0%, 15%);
-    height: 100%;
-}
-
-.container {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
+
 }
 
 p {
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 600;
-    max-width: 800px;
+    max-width: 600px;
     padding-top: 180px;
     color: white;
+}
+
+span {
+    opacity: 0;
+    animation: fade 10s infinite;
+    animation-delay: calc(var(--i) *.2s);
+    filter: blur(4px);
+
+}
+
+
+@keyframes fade {
+    50% {
+      opacity: .8;
+      filter: blur(0);
+    }
+    70% {
+      opacity: 0;
+      filter: blur(4px);
+    }
 }
